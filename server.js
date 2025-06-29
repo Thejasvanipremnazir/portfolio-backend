@@ -28,5 +28,8 @@ app.post("/api/contact", async (req, res) => {
     res.status(500).json({ success: false, msg: "Something went wrong." });
   }
 });
-
+app.get("/", (req, res) => {
+  res.send("✅ Portfolio Backend is working, Thejasvani!");
+});
 app.listen(5000, () => console.log("Server running at http://localhost:5000"));
+
